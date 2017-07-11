@@ -27,21 +27,21 @@ $classification = $koko->trackContent(array(
   'user_id' => '123',
   'type' => 'post',
   'content_type' => 'text',
-  'content' => {text: 'Some content'}
+  'content' => array('text' => 'Some content')
 ));
 
 $koko->trackFlag(array(
   'id' => '123',
   'flagger_id' => '123',
   'reasons' => ['crisis'],
-  'targets' => [{content_id: '123'}]
+  'targets' => array(array('content_id' => '123'))
 ));
 
 $koko->trackModeration(array(
   'id' => '123',
   'moderator_id' => '123',
   'action' => 'user_warned',
-  'target' => {content_id: '123'}
+  'target' => array(array('content_id' => '123'))
 ));
 ```
 
