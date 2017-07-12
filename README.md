@@ -48,6 +48,10 @@ $koko->trackModeration([
 
 ## Testing
 
+Run the following command:
+
+    php test.php
+
 ## License
 
 ```
