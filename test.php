@@ -40,7 +40,7 @@ function testTrackFlag($koko) {
     'created_at' => date('c')
   ];
 
-  $koko->trackContent($request);
+  $koko->trackFlag($request);
 
   try {
     unset($request['flagger_id']);
