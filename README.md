@@ -16,33 +16,34 @@ include 'vendor/autoload.php';
 
 use Koko\Tracker;
 
-$koko = new Tracker(array('auth' => 'YOUR_AUTH_KEY'));
+$koko = new Tracker(['auth' => 'YOUR_AUTH_KEY']);
 ```
 
 Track content, see more [here](https://docs.koko.ai/#track-endpoints).
 
 ```php
-$classification = $koko->trackContent(array(
+$classification = $koko->trackContent([
   'id' => '123',
   'user_id' => '123',
   'type' => 'post',
   'content_type' => 'text',
-  'content' => array('text' => 'Some content')
-));
+  'content' => ['text' => 'Some content']
+]);
 
-$koko->trackFlag(array(
+$koko->trackFlag([
   'id' => '123',
   'flagger_id' => '123',
   'reasons' => ['crisis'],
-  'targets' => array(array('content_id' => '123'))
-));
+  'targets' => [['content_id' => '123']]
+]);
 
-$koko->trackModeration(array(
+$koko->trackModeration([
   'id' => '123',
   'moderator_id' => '123',
   'action' => 'user_warned',
-  'target' => array(array('content_id' => '123'))
-));
+  'target' => ['content_id' => '123']
+]);
+
 ```
 
 ## Testing
