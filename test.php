@@ -4,7 +4,10 @@ include 'vendor/autoload.php';
 
 use Koko\Tracker;
 
-$koko = new Tracker(['auth' => '996482e12021de17e18bb5a4e36d58d8c60941250b6bf82272daa1b5']);
+$dotenv = new Dotenv\Dotenv(__DIR__);
+$dotenv->load();
+
+$koko = new Tracker(['auth' => $_ENV['KOKO_AUTH']]);
 
 date_default_timezone_set('UTC');
 
