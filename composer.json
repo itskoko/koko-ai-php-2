@@ -8,6 +8,9 @@
   },
   "require": {
     "guzzlehttp/guzzle": "^6.3",
+  },
+  "require-dev": {
     "vlucas/phpdotenv": "^2.4"
-  }
+  },
+  "license": "MIT"
 }
