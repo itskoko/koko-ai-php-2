@@ -7,3 +7,8 @@
 ==================
 
   * Updated error property from `error` to `errors`.
+
+0.0.8 / 2017-07-17
+==================
+
+  * Changed Guzzle to 6.1.1 for improved compatibility.
