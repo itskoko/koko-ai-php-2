@@ -26,8 +26,8 @@ class Tracker {
     $json = $response->getBody()->getContents();
     $data = json_decode($json, true);
 
-    if (array_key_exists('error', $data)) {
-      throw new \Exception(join('\n', $data['error']));
+    if (array_key_exists('errors', $data)) {
+      throw new \Exception(join('\n', $data['errors']));
     }
 
     return $data;
