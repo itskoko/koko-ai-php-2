@@ -5,7 +5,7 @@ koko-ai-php is a PHP client for https://docs.koko.ai
 
 ## Install
 
-    composer require koko/koko-ai
+    composer require koko-temp/koko-ai
 
 ## Usage
 
