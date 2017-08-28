@@ -1,5 +1,5 @@
 {
-  "name": "koko/koko-ai-2",
+  "name": "koko-temp/koko-ai",
   "description": "A PHP client for the Koko API",
   "autoload": {
     "psr-4": {
